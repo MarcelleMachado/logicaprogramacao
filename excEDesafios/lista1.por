@@ -48,6 +48,12 @@ programa
 		leia(n1)
 		escreva("Número 2: ")
 		leia(n2)
+		se (n2 < 0)
+		{
+		escreva("Não é possível dividir por um número menor ou igual a zero.")
+		}
+		senao
+		{
 		soma = n1 + n2
 		subtracao = n1 - n2
 		multiplicacao = n1 * n2
@@ -56,6 +62,7 @@ programa
 		escreva("\nSubtração: ",subtracao)
 		escreva("\nMultiplicação: ",multiplicacao)
 		escreva("\nDivisão: ",divisao,"\n")
+		}
 	}
 	funcao questao4()
 	{
@@ -67,7 +74,7 @@ programa
 	}
 	funcao questao5()
 	{
-		real total
+		inteiro total
 		escreva("\nExpressão a: 2 + 3 - 5 * 8 - 4 + 354 - 521 + 7 * 66")
 		total = 2 + 3 - 5 * 8 - 4 + 354 - 521 + 7 * 66
 		escreva("\nO resultado é: ", total, "\n")
@@ -81,7 +88,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1817; 
+ * @POSICAO-CURSOR = 1972; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
